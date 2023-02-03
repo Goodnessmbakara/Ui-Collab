@@ -1,3 +1,114 @@
+$text-pry: #1D385F;
+$text-sec: #B4BAC0;
+$text-green: #C4E7EE;
+$page-inline-padding: 60px;
+
+:root {
+    font-size: 16px;
+}
+
+.btn {
+
+  }
+
+//   .btn {
+//     align-items: center;
+//     background-clip: padding-box;
+//     background-color: #fa6400;
+//     border: 1px solid transparent;
+//     border-radius: .25rem;
+//     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+//     box-sizing: border-box;
+//     color: #fff;
+//     cursor: pointer;
+//     display: inline-flex;
+//     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//     font-size: 16px;
+//     font-weight: 600;
+//     justify-content: center;
+//     line-height: 1.25;
+//     margin: 0;
+//     min-height: 3rem;
+//     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+//     position: relative;
+//     text-decoration: none;
+//     transition: all 250ms;
+//     user-select: none;
+//     -webkit-user-select: none;
+//     touch-action: manipulation;
+//     vertical-align: baseline;
+//     width: auto;
+
+// }
+
+
+/* CSS */
+
+  .btn-outline {
+    background-color: #ffffff;
+    color: $text-green;
+    border: 1px solid $text-green;
+    border-radius: 5px;
+    border: 1px solid $text-green;
+    display: inline-flex;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    height: 650px;
+    outline: 1px solid red;
+
+    nav {
+        padding-inline: $page-inline-padding;
+        padding-block: 10px;
+        display: flex;
+        align-items: center;
+
+        .navbrand {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .nav-menu {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-right: 20px;
+
+            li {
+                font-size: 0.8rem;
+                font-weight: bold;
+                color: $text-pry;
+                font-weight: bold;
+
+                a {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

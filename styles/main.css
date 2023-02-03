@@ -1,4 +1,89 @@
+:root {
+  font-size: 16px;
+}
+
+/* CSS */
+.btn-outline {
+  background-color: #ffffff;
+  color: #C4E7EE;
+  border: 1px solid #C4E7EE;
+  border-radius: 5px;
+  border: 1px solid #C4E7EE;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 17px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  height: 650px;
+  outline: 1px solid red;
+}
+
+header nav {
+  padding-inline: 60px;
+  padding-block: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navbrand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+header nav .nav-menu {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+header nav .nav-menu li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #1D385F;
+  font-weight: bold;
+}
+
+header nav .nav-menu li a {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
