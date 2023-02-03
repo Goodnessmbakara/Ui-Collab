@@ -1,0 +1,31 @@
+.navbar {
+    contain: content;
+}
+
+.insure {
+   text-align: left;
+   color: rgb(62, 196, 62); 
+   size: 20px;
+}
+.home {
+
+}
+
+.about {
+
+}
+
+.claims {
+
+}
+
+.insurance {
+
+}
+
+.getstarted {
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 5px;
+    bottom: unset;
+}
