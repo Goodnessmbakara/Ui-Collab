@@ -2,24 +2,47 @@
   font-size: 16px;
 }
 
-/* CSS */
-.btn-outline {
-  background-color: #ffffff;
-  color: #C4E7EE;
-  border: 1px solid #C4E7EE;
-  border-radius: 5px;
-  border: 1px solid #C4E7EE;
+.btn {
+  height: 40px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 17px;
+  padding: 5px 15px;
+  background-color: #1D385F;
+  font-size: 0.8rem;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #1D385F;
+  border: 1px solid #1D385F;
+}
+
+.nav-btn {
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #C4E7EE;
+  color: #C4E7EE;
+}
+
+.color-pry {
+  color: #1D385F;
+}
+
+.color-sec {
+  color: #B4BAC0;
+}
+
+.color-green {
+  color: #C4E7EE;
 }
 
 * {
@@ -30,7 +53,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
 }
 
@@ -44,16 +67,19 @@ li {
 }
 
 header {
-  height: 650px;
-  outline: 1px solid red;
+  height: 580px;
+  padding-inline: 60px;
 }
 
 header nav {
-  padding-inline: 60px;
-  padding-block: 10px;
+  height: 5%;
+  padding: 30px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,11 +87,17 @@ header nav {
 
 header nav .navbrand {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
-header nav .nav-menu {
+header nav .nav-menu-wrapper {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .nav-menu-wrapper .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,14 +108,63 @@ header nav .nav-menu {
   margin-right: 20px;
 }
 
-header nav .nav-menu li {
+header nav .nav-menu-wrapper .nav-menu li {
   font-size: 0.8rem;
   font-weight: bold;
   color: #1D385F;
   font-weight: bold;
 }
 
-header nav .nav-menu li a {
+header nav .nav-menu-wrapper .nav-menu li a {
   cursor: pointer;
+}
+
+header .hero-section {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  height: 80%;
+}
+
+header .hero-section .left-hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 30px;
+}
+
+header .hero-section .left-hero-container .hero-title {
+  line-height: 1.2;
+  font-size: 3rem;
+}
+
+header .hero-section .left-hero-container .hero-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+header .hero-section .left-hero-container .hero-btn-container > * {
+  padding-inline: 40px;
+}
+
+header .hero-section .right-hero-container {
+  background: url("../images/pexels-kampus-production-8439679-min.jpg") no-repeat center center/cover;
+}
+
+main {
+  padding: 60px;
 }
 /*# sourceMappingURL=main.css.map */

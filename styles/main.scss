@@ -1,6 +1,6 @@
-$text-pry: #1D385F;
-$text-sec: #B4BAC0;
-$text-green: #C4E7EE;
+$color-pry: #1D385F;
+$color-sec: #B4BAC0;
+$color-green: #C4E7EE;
 $page-inline-padding: 60px;
 
 :root {
@@ -8,54 +8,36 @@ $page-inline-padding: 60px;
 }
 
 .btn {
-
-  }
-
-//   .btn {
-//     align-items: center;
-//     background-clip: padding-box;
-//     background-color: #fa6400;
-//     border: 1px solid transparent;
-//     border-radius: .25rem;
-//     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-//     box-sizing: border-box;
-//     color: #fff;
-//     cursor: pointer;
-//     display: inline-flex;
-//     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-//     font-size: 16px;
-//     font-weight: 600;
-//     justify-content: center;
-//     line-height: 1.25;
-//     margin: 0;
-//     min-height: 3rem;
-//     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-//     position: relative;
-//     text-decoration: none;
-//     transition: all 250ms;
-//     user-select: none;
-//     -webkit-user-select: none;
-//     touch-action: manipulation;
-//     vertical-align: baseline;
-//     width: auto;
-
-// }
-
-
-/* CSS */
-
-  .btn-outline {
-    background-color: #ffffff;
-    color: $text-green;
-    border: 1px solid $text-green;
-    border-radius: 5px;
-    border: 1px solid $text-green;
+    height: 40px;
     display: inline-flex;
-    height: 48px;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 17px;
-  }
+    padding: 5px 15px;
+    background-color: $color-pry;
+    font-size: 0.8rem;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.btn-outline {
+    background-color: #ffffff;
+    color: $color-pry;
+    border: 1px solid $color-pry;
+}
+.nav-btn {
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid $color-green;
+    color: $color-green;
+}
+.color-pry {
+    color: $color-pry;
+}
+.color-sec {
+    color: $color-sec
+}
+.color-green {
+    color: $color-green
+}
 
 * {
     padding: 0;
@@ -64,7 +46,7 @@ $page-inline-padding: 60px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
 }
 
@@ -78,37 +60,81 @@ li {
 }
 
 header {
-    height: 650px;
-    outline: 1px solid red;
+    height: 580px;
+    // outline: 1px solid red;
+    padding-inline: $page-inline-padding;
 
     nav {
-        padding-inline: $page-inline-padding;
-        padding-block: 10px;
+        height: 5%;
+        padding: 30px 0 30px;
         display: flex;
+        justify-content: center;
         align-items: center;
 
         .navbrand {
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
 
-        .nav-menu {
+        .nav-menu-wrapper {
             margin-left: auto;
             display: flex;
-            align-items: center;
-            gap: 40px;
-            margin-right: 20px;
-
-            li {
-                font-size: 0.8rem;
-                font-weight: bold;
-                color: $text-pry;
-                font-weight: bold;
-
-                a {
-                    cursor: pointer;
+            
+            .nav-menu {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                margin-right: 20px;
+    
+                li {
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    color: $color-pry;
+                    font-weight: bold;
+    
+                    a {
+                        cursor: pointer;
+                    }
                 }
             }
         }
+
     }
+
+    .hero-section {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px;
+        height: 80%;
+        
+        .left-hero-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 30px;
+
+            .hero-title {
+                line-height: 1.2;
+                font-size: 3rem;
+            }
+
+            .hero-btn-container {
+                display: flex;
+                gap: 20px;
+
+                & > * {
+                    padding-inline: 40px;
+                }
+            }
+        }
+
+        .right-hero-container {
+            background: url("../images/pexels-kampus-production-8439679-min.jpg") no-repeat center center/cover;
+        }
+    }
+}
+
+main {
+    padding:$page-inline-padding;
 }

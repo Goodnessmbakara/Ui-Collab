@@ -1,7 +1,7 @@
 <!-- HTML !-->
 <button class="button-59" role="button">Button 59</button>
 
-/* CSS */
+/* CSS outline button */
 .button-59 {
   align-items: center;
   background-color: #fff;
