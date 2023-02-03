@@ -38,6 +38,16 @@ $page-inline-padding: 60px;
 .color-green {
     color: $color-green
 }
+.text-sm {
+    font-size: 0.9rem;
+}
+.bold {
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: medium;
+}
 
 * {
     padding: 0;
@@ -137,4 +147,43 @@ header {
 
 main {
     padding:$page-inline-padding;
+    padding-top: 100px;
+
+    .more-info {
+        .more-info_header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .more-info_body {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            column-gap: 30px;
+
+            & > div {
+                text-align: center;
+                color: #231f1f;
+            }
+
+            .icon-container {
+                background-color: $color-green;
+                color: #3a3737;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                padding: 10px;
+                width: max-content;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .h3 {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
