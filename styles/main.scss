@@ -1,10 +1,24 @@
 $color-pry: #1D385F;
+$icon-color: #29A9C1;
 $color-sec: #B4BAC0;
 $color-green: #C4E7EE;
 $page-inline-padding: 60px;
+$bg-pry: #F8FCFF;
 
 :root {
     font-size: 16px;
+}
+
+.icon-container {
+    background-color: $color-green;
+    color: #3a3737;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: max-content;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -40,6 +54,9 @@ $page-inline-padding: 60px;
 }
 .text-sm {
     font-size: 0.9rem;
+}
+.text-center {
+    text-align: center;
 }
 .bold {
     font-weight: bold;
@@ -146,10 +163,10 @@ header {
 }
 
 main {
-    padding:$page-inline-padding;
     padding-top: 100px;
-
-    .more-info {
+    
+    section.more-info {
+        padding:$page-inline-padding;
         .more-info_header {
             display: flex;
             flex-direction: column;
@@ -157,12 +174,12 @@ main {
             text-align: center;
             margin-bottom: 50px;
         }
-
+        
         .more-info_body {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             column-gap: 30px;
-
+            
             & > div {
                 text-align: center;
                 color: #231f1f;
@@ -180,9 +197,62 @@ main {
                 justify-content: center;
                 align-items: center;
             }
-
             .h3 {
                 margin-bottom: 10px;
+            }
+        }
+    }
+
+    section.services-cta {
+        padding:$page-inline-padding;
+        background-color: $bg-pry;
+        padding-block: 30px;
+
+        .services-cta_header {
+            h2 {
+                margin-top: 3px;
+            }
+        }
+
+        .services-cta_body {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .services-card {
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 250px;
+                flex: 1;
+
+                .icon-container {
+                    background-color: #ffffff;
+                    box-shadow: rgba(126, 124, 124, 0.07) 0px 1px 1px, rgba(198, 196, 196, 0.07) 0px 2px 2px, rgba(198, 193, 193, 0.07) 0px 4px 4px, rgba(194, 188, 188, 0.07) 0px 8px 8px, rgba(47, 46, 46, 0.077) 0px 16px 16px;
+                    color: $icon-color;
+                }
+            }
+        }
+
+        .services-cta_footer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            .slider-info {
+                width: 35px;
+                height: 5px;
+                background-color: #b5e3eb;
+                border-radius: 50px;
+
+                &:nth-child(3) {
+                    background-color: $color-pry;
+                }
             }
         }
     }
