@@ -2,9 +2,23 @@
   font-size: 16px;
 }
 
+.mb1 {
+  margin-bottom: 10px !important;
+}
+
+.mb {
+  margin-bottom: 5px !important;
+}
+
+.py3 {
+  padding-inline: 30px !important;
+}
+
+.py4 {
+  padding-inline: 40px !important;
+}
+
 .icon-container {
-  background-color: #C4E7EE;
-  color: #3a3737;
   margin-bottom: 15px;
   padding: 10px;
   width: -webkit-max-content;
@@ -65,6 +79,17 @@
   color: #C4E7EE;
 }
 
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
 .text-sm {
   font-size: 0.9rem;
 }
@@ -79,6 +104,7 @@
 
 .h3 {
   font-size: medium;
+  line-height: 1.2;
 }
 
 * {
@@ -104,7 +130,7 @@ li {
 
 header {
   height: 580px;
-  padding-inline: 60px;
+  padding-inline: 80px;
 }
 
 header nav {
@@ -192,10 +218,6 @@ header .hero-section .left-hero-container .hero-btn-container {
   gap: 20px;
 }
 
-header .hero-section .left-hero-container .hero-btn-container > * {
-  padding-inline: 40px;
-}
-
 header .hero-section .right-hero-container {
   background: url("../images/pexels-kampus-production-8439679-min.jpg") no-repeat center center/cover;
 }
@@ -205,18 +227,10 @@ main {
 }
 
 main section.more-info {
-  padding: 60px;
+  padding: 80px;
 }
 
 main section.more-info .more-info_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -245,15 +259,6 @@ main section.more-info .more-info_body .icon-container {
   width: -moz-max-content;
   width: max-content;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main section.more-info .more-info_body .h3 {
@@ -261,7 +266,7 @@ main section.more-info .more-info_body .h3 {
 }
 
 main section.services-cta {
-  padding: 60px;
+  padding: 80px;
   background-color: #F8FCFF;
   padding-block: 30px;
 }
@@ -326,5 +331,42 @@ main section.services-cta .services-cta_footer .slider-info {
 
 main section.services-cta .services-cta_footer .slider-info:nth-child(3) {
   background-color: #1D385F;
+}
+
+main section.insurance-services {
+  padding-block: 70px;
+  padding-inline: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+main section.insurance-services .left-container .insurance-services_body {
+  margin-block: 25px;
+}
+
+main section.insurance-services .left-container .insurance-services_body .insurance-services_grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+main section.insurance-services .left-container .insurance-services_body .insurance-services_grp .icon-container {
+  background-color: #29A9C1;
+  color: #ffffff;
+}
+
+main section.insurance-services .left-container .insurance-services_btn {
+  background-color: #29A9C1;
+}
+
+main section.insurance-services .right-container {
+  background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
 }
 /*# sourceMappingURL=main.css.map */
