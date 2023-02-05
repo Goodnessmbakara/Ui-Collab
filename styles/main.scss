@@ -4,6 +4,7 @@ $color-sec: #B4BAC0;
 $color-green: #C4E7EE;
 $page-inline-padding: 80px;
 $bg-pry: #F8FCFF;
+$bg-sec: #E1F2FA;
 
 :root {
     font-size: 16px;
@@ -17,6 +18,9 @@ $bg-pry: #F8FCFF;
 }
 .mt4 {
     margin-top: 40px !important;
+}
+.mt2 {
+    margin-top: 20px !important;
 }
 .px3 {
     padding-inline: 30px !important;
@@ -74,7 +78,7 @@ $bg-pry: #F8FCFF;
     gap: 8px;
 }
 .text-sm {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .text-center {
     text-align: center;
@@ -106,6 +110,11 @@ a {
 
 li {
     list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -339,7 +348,7 @@ main {
 
         .section_body {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 350px));
+            grid-template-columns: repeat(3, minmax(0, 320px));
             justify-content: center;
             column-gap: 30px;
             
@@ -395,6 +404,52 @@ main {
             }
         }
 
+    }
+
+    section.contact-help {
+        padding-inline: $page-inline-padding;
+        background-color: $bg-sec;
+
+        .contact-help_header {
+            display: flex;
+            justify-content: space-between;
+            padding-inline: 10%;
+
+            .icon-wrapper {
+                display: flex;
+                gap: 10px;
+
+                .icon-container {
+                    color: $icon-color;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        .contact-help_body {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: center;
+            column-gap: 30px;
+
+            .contact-help_card {
+                background-color: #ffffff;
+                padding: 30px;
+                height: 340px;
+                border-radius: 10px;
+
+                .img-container {
+                    height: 50%;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    img {
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
     }
     
 }
