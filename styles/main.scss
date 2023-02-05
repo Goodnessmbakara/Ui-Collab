@@ -12,9 +12,11 @@ $bg-pry: #F8FCFF;
 .mb1 {
     margin-bottom: 10px !important;
 }
-
 .mb {
     margin-bottom: 5px !important;
+}
+.mt {
+    margin-top: 40px !important;
 }
 .py3 {
     padding-inline: 30px !important;
@@ -166,10 +168,6 @@ header {
             .hero-btn-container {
                 display: flex;
                 gap: 20px;
-
-                // & > * {
-                //     padding-inline: 40px;
-                // }
             }
         }
 
@@ -204,9 +202,6 @@ main {
                 color: #3a3737;
                 margin: 0 auto;
                 margin-bottom: 15px;
-                padding: 10px;
-                width: max-content;
-                border-radius: 50%;
             }
             .h3 {
                 margin-bottom: 10px;
@@ -297,6 +292,19 @@ main {
         }
 
         .right-container {
+            background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
+        }
+    }
+
+    section.insurance-claims {
+        padding-inline: $page-inline-padding;
+        .insurance-claims_body {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .left-container {
+            outline: 1px solid blue;
             background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
         }
     }

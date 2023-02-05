@@ -10,6 +10,10 @@
   margin-bottom: 5px !important;
 }
 
+.mt {
+  margin-top: 40px !important;
+}
+
 .py3 {
   padding-inline: 30px !important;
 }
@@ -254,11 +258,6 @@ main section.more-info .more-info_body .icon-container {
   color: #3a3737;
   margin: 0 auto;
   margin-bottom: 15px;
-  padding: 10px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  border-radius: 50%;
 }
 
 main section.more-info .more-info_body .h3 {
@@ -367,6 +366,22 @@ main section.insurance-services .left-container .insurance-services_btn {
 }
 
 main section.insurance-services .right-container {
+  background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
+}
+
+main section.insurance-claims {
+  padding-inline: 80px;
+}
+
+main section.insurance-claims .insurance-claims_body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+main section.insurance-claims .left-container {
+  outline: 1px solid blue;
   background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
 }
 /*# sourceMappingURL=main.css.map */
