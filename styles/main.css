@@ -119,6 +119,10 @@
   line-height: 1.2;
 }
 
+.none {
+  display: none !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -536,8 +540,7 @@ main section.contact-help .contact-help_body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  gap: 30px;
 }
 
 main section.contact-help .contact-help_body .contact-help_card {
@@ -545,15 +548,64 @@ main section.contact-help .contact-help_body .contact-help_card {
   padding: 30px;
   height: 340px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main section.contact-help .contact-help_body .contact-help_card .img-container {
   height: 50%;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 main section.contact-help .contact-help_body .contact-help_card .img-container img {
   border-radius: 8px;
+}
+
+main section.testimonials {
+  padding-inline: 80px;
+}
+
+main section.testimonials .testimonials_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+main section.testimonials .testimonials_body .testimonial-grp {
+  text-align: center;
+}
+
+main section.testimonials .testimonials_body .testimonial-grp .img-wrapper {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 60px;
+}
+
+main section.testimonials .testimonials_body .testimonial-grp .img-wrapper img {
+  border-radius: 50%;
+}
+
+main section.testimonials .testimonials_body .testimonial-grp .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -91,6 +91,9 @@ $bg-sec: #E1F2FA;
     font-size: medium;
     line-height: 1.2;
 }
+.none {
+    display: none !important;
+}
 
 * {
     padding: 0;
@@ -431,22 +434,54 @@ main {
             display: grid;
             grid-template-columns: repeat(auto-fit, 320px);
             justify-content: center;
-            column-gap: 30px;
+            gap: 30px;
 
             .contact-help_card {
                 background-color: #ffffff;
                 padding: 30px;
                 height: 340px;
                 border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 .img-container {
                     height: 50%;
                     width: 100%;
-                    margin-bottom: 20px;
 
                     img {
                         border-radius: 8px;
                     }
+                }
+            }
+        }
+    }
+
+    section.testimonials {
+        padding-inline: $page-inline-padding;
+
+        .testimonials_body {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            .testimonial-grp {
+                text-align: center;
+                .img-wrapper {
+                    margin: auto;
+                    margin-bottom: 10px;
+                    width: 70px;
+                    height: 60px;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
                 }
             }
         }
