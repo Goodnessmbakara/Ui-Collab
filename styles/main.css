@@ -10,7 +10,7 @@
   margin-bottom: 5px !important;
 }
 
-.mt {
+.mt4 {
   margin-top: 40px !important;
 }
 
@@ -339,6 +339,8 @@ main section.insurance-services {
   display: grid;
   -ms-grid-columns: (minmax(0, 1fr))[2];
       grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
 }
 
 main section.insurance-services .left-container .insurance-services_body {
@@ -378,10 +380,32 @@ main section.insurance-claims .insurance-claims_body {
   display: grid;
   -ms-grid-columns: (minmax(0, 1fr))[2];
       grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+  width: 80%;
+  min-width: 600px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 main section.insurance-claims .left-container {
-  outline: 1px solid blue;
   background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
+  border-radius: 20px;
+}
+
+main section.insurance-claims .right-container .insurance-claims_grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+main section.insurance-claims .right-container .insurance-claims_grp .icon-container {
+  background-color: #29A9C1;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
