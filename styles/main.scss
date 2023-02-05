@@ -18,11 +18,14 @@ $bg-pry: #F8FCFF;
 .mt4 {
     margin-top: 40px !important;
 }
-.py3 {
+.px3 {
     padding-inline: 30px !important;
 }
-.py4 {
+.px4 {
     padding-inline: 40px !important;
+}
+.py7 {
+    padding-block: 70px !important;
 }
 .icon-container {
     margin-bottom: 15px;
@@ -212,7 +215,6 @@ main {
     section.services-cta {
         padding:$page-inline-padding;
         background-color: $bg-pry;
-        padding-block: 30px;
 
         .services-cta_header {
             h2 {
@@ -264,7 +266,6 @@ main {
     }
 
     section.insurance-services {
-        padding-block: 70px;
         padding-inline: $page-inline-padding;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -331,4 +332,69 @@ main {
 
         }
     }
+
+    section.hosting {
+        padding-inline: $page-inline-padding;
+        background-color: $bg-pry;
+
+        .section_body {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 350px));
+            justify-content: center;
+            column-gap: 30px;
+            
+            .hosting_card {
+                background-color: #ffffff;
+                padding: 25px;
+                border-radius: 20px;
+    
+                .hosting_card-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid rgba(222, 220, 220, 0.524);
+
+                    .h3 {
+                        line-height: 1;
+                        margin-bottom: 5px;
+                    }
+                     
+                    & > .icon-container {
+                        background-color: $bg-pry;
+                        color: $icon-color;
+                        margin: 0;
+                    }
+
+                }
+
+                .hosting_card-body {
+                    margin-block: 10px;
+                    .hosting_card-body_wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        padding-block: 10px;
+
+                        .icon-container {
+                            margin: 0;
+                            width: max-content;
+                            padding: 0px;
+                            color: $icon-color;
+                        }
+                    }
+                }
+
+                .btn {
+                    display: flex;
+                    width: 65%;
+                    margin: auto;
+                    background-color: $icon-color;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+    }
+    
 }

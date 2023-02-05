@@ -14,12 +14,16 @@
   margin-top: 40px !important;
 }
 
-.py3 {
+.px3 {
   padding-inline: 30px !important;
 }
 
-.py4 {
+.px4 {
   padding-inline: 40px !important;
+}
+
+.py7 {
+  padding-block: 70px !important;
 }
 
 .icon-container {
@@ -267,7 +271,6 @@ main section.more-info .more-info_body .h3 {
 main section.services-cta {
   padding: 80px;
   background-color: #F8FCFF;
-  padding-block: 30px;
 }
 
 main section.services-cta .services-cta_header h2 {
@@ -333,7 +336,6 @@ main section.services-cta .services-cta_footer .slider-info:nth-child(3) {
 }
 
 main section.insurance-services {
-  padding-block: 70px;
   padding-inline: 80px;
   display: -ms-grid;
   display: grid;
@@ -407,5 +409,85 @@ main section.insurance-claims .right-container .insurance-claims_grp {
 main section.insurance-claims .right-container .insurance-claims_grp .icon-container {
   background-color: #29A9C1;
   color: #ffffff;
+}
+
+main section.hosting {
+  padding-inline: 80px;
+  background-color: #F8FCFF;
+}
+
+main section.hosting .section_body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 350px))[3];
+      grid-template-columns: repeat(3, minmax(0, 350px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+main section.hosting .section_body .hosting_card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+main section.hosting .section_body .hosting_card .hosting_card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(222, 220, 220, 0.524);
+}
+
+main section.hosting .section_body .hosting_card .hosting_card-header .h3 {
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+main section.hosting .section_body .hosting_card .hosting_card-header > .icon-container {
+  background-color: #F8FCFF;
+  color: #29A9C1;
+  margin: 0;
+}
+
+main section.hosting .section_body .hosting_card .hosting_card-body {
+  margin-block: 10px;
+}
+
+main section.hosting .section_body .hosting_card .hosting_card-body .hosting_card-body_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding-block: 10px;
+}
+
+main section.hosting .section_body .hosting_card .hosting_card-body .hosting_card-body_wrapper .icon-container {
+  margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px;
+  color: #29A9C1;
+}
+
+main section.hosting .section_body .hosting_card .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  margin: auto;
+  background-color: #29A9C1;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */
