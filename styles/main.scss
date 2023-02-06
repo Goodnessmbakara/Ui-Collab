@@ -6,21 +6,23 @@ $page-inline-padding: 80px;
 $bg-pry: #F8FCFF;
 $bg-sec: #E1F2FA;
 
-:root {
-    font-size: 16px;
-}
-
 .mb1 {
     margin-bottom: 10px !important;
 }
 .mb {
     margin-bottom: 5px !important;
 }
+.mb2 {
+    margin-bottom: 20px !important;
+}
 .mt4 {
     margin-top: 40px !important;
 }
 .mt2 {
     margin-top: 20px !important;
+}
+.p1 {
+    padding: 10px !important;
 }
 .px3 {
     padding-inline: 30px !important;
@@ -106,6 +108,15 @@ $bg-sec: #E1F2FA;
     }
 }
 
+.icon-lg-color {
+    background-color: $icon-color;
+    color: #ffffff;   
+}
+
+.align-start {
+    align-items: flex-start !important;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -133,7 +144,6 @@ img {
 
 header {
     height: 580px;
-    // outline: 1px solid red;
     padding-inline: $page-inline-padding;
 
     nav {
@@ -297,18 +307,6 @@ main {
         .left-container {
             .insurance-services_body {
                 margin-block: 25px;
-
-                .insurance-services_grp {
-                    display: flex;
-                    gap: 15px;
-                    align-items: flex-start;
-                    margin-bottom: 20px;
-
-                    .icon-container {
-                        background-color: $icon-color;
-                        color: #ffffff;
-                    }
-                }
             }
 
             .insurance-services_btn {
@@ -337,22 +335,6 @@ main {
         .left-container {
             background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
             border-radius: 20px;
-        }
-
-        .right-container {
-
-            .insurance-claims_grp {
-                display: flex;
-                gap: 15px;
-                align-items: flex-start;
-                margin-bottom: 20px;
-
-                .icon-container {
-                    background-color: $icon-color;
-                    color: #ffffff;
-                }
-            }
-
         }
     }
 

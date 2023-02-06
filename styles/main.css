@@ -1,7 +1,3 @@
-:root {
-  font-size: 16px;
-}
-
 .mb1 {
   margin-bottom: 10px !important;
 }
@@ -10,12 +6,20 @@
   margin-bottom: 5px !important;
 }
 
+.mb2 {
+  margin-bottom: 20px !important;
+}
+
 .mt4 {
   margin-top: 40px !important;
 }
 
 .mt2 {
   margin-top: 20px !important;
+}
+
+.p1 {
+  padding: 10px !important;
 }
 
 .px3 {
@@ -136,6 +140,17 @@
 .icon-item .icon-container {
   margin: 0;
   padding: 0;
+}
+
+.icon-lg-color {
+  background-color: #29A9C1;
+  color: #ffffff;
+}
+
+.align-start {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
 }
 
 * {
@@ -377,22 +392,6 @@ main section.insurance-services .left-container .insurance-services_body {
   margin-block: 25px;
 }
 
-main section.insurance-services .left-container .insurance-services_body .insurance-services_grp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 15px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-main section.insurance-services .left-container .insurance-services_body .insurance-services_grp .icon-container {
-  background-color: #29A9C1;
-  color: #ffffff;
-}
-
 main section.insurance-services .left-container .insurance-services_btn {
   background-color: #29A9C1;
 }
@@ -421,22 +420,6 @@ main section.insurance-claims .insurance-claims_body {
 main section.insurance-claims .left-container {
   background: url("../images/pexels-kindel-media-7688374-min.jpg") no-repeat center center/cover;
   border-radius: 20px;
-}
-
-main section.insurance-claims .right-container .insurance-claims_grp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 15px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-main section.insurance-claims .right-container .insurance-claims_grp .icon-container {
-  background-color: #29A9C1;
-  color: #ffffff;
 }
 
 main section.hosting {
